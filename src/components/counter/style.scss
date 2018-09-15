@@ -1,0 +1,43 @@
+@import "../../styles/variables.scss";
+
+h1 {
+  color: inherit;
+  font-weight: 100;
+  font-size: 8em;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+button {
+  background: $color-bg;
+  border-radius: 0px;
+  border: 1px solid $color-text;
+  color: inherit;
+  font-size: 2em;
+  font-weight: 100;
+  line-height: inherit;
+  margin: 0;
+  outline: none;
+  padding: 5px 15px 10px;
+  transition: .2s;
+  min-width: 50px;
+
+  &:hover,
+  &:active,
+  &:disabled {
+    background: $color-text;
+    color: $color-bg;
+  }
+
+  &:active {
+    outline: 2px solid $color-text;
+  }
+
+  &:focus {
+    border: 1px solid $color-text;
+  }
+
+  & + button {
+    margin-left: 3px;
+  }
+}

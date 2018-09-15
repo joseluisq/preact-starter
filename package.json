@@ -1,0 +1,63 @@
+{
+  "name": "preact-starter",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Minimal Preact, Typescript and Parcel starter.",
+  "author": "José Quintana <git.io/joseluisq>",
+  "license": "MIT",
+  "main": "public/index.html",
+  "scripts": {
+    "clean": "rm -rf dist .cache",
+    "prestart": "yarn clean",
+    "start": "parcel public/index.html",
+    "prebuild": "yarn lint && yarn clean",
+    "build": "env NODE_ENV=production parcel build --detailed-report --public-url ./ ./public/index.html",
+    "lint": "tslint --format stylish --project tsconfig.json",
+    "pretest": "yarn lint",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "preact": "^8.3.1",
+    "unistore": "^3.0.6"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.0",
+    "@types/node": "^10.9.4",
+    "@types/webpack-env": "^1.13.6",
+    "autoprefixer": "^9.0.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.4.1",
+    "node-sass": "^4.9.2",
+    "parcel-bundler": "^1.9.7",
+    "parcel-plugin-typescript": "^1.0.0",
+    "ts-jest": "^23.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-standard-plus": "^2.1.0",
+    "typescript": "^2.9.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testMatch": [
+      "**/test/**.spec.+(ts|tsx|js)"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|scss|sass|svg|png|jpg|jpeg|ttf|woff|woff2)$": "identity-obj-proxy",
+      "^@app/(.*)$": "<rootDir>/src/$1",
+      "^@components/(.*)$": "<rootDir>/src/components/$1",
+      "^@styles/(.*)$": "<rootDir>/src/styles/$1",
+      "^@public/(.*)$": "<rootDir>/public/$1",
+      "^@assets/(.*)$": "<rootDir>/public/assets/$1"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
