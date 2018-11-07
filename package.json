@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "preact": "^8.3.1",
-    "unistore": "^3.0.6"
+    "unistore": "^3.1.0"
   },
   "devDependencies": {
     "@types/jest": "^23.3.0",
@@ -32,7 +32,7 @@
     "parcel-plugin-typescript": "^1.0.0",
     "ts-jest": "^23.0.1",
     "tslint": "^5.11.0",
-    "tslint-config-standard-plus": "^2.1.0",
+    "tslint-config-standard-plus": "^2.1.1",
     "typescript": "^2.9.2"
   },
   "jest": {

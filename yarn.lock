@@ -6051,9 +6051,9 @@ tslint-clean-code@^0.2.7:
     memoize-decorator "^1.0.2"
     tsutils "2.7.1"
 
-tslint-config-standard-plus@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/tslint-config-standard-plus/-/tslint-config-standard-plus-2.1.0.tgz#410c54b24bb8306c3342fb1b6c60c6a13cf874da"
+tslint-config-standard-plus@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/tslint-config-standard-plus/-/tslint-config-standard-plus-2.1.1.tgz#d2de6c7f6b314adef26d2ade0f92952267abb52d"
   dependencies:
     tslint-clean-code "^0.2.7"
     tslint-eslint-rules "^5.3.1"
@@ -6172,9 +6172,9 @@ uniqs@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/uniqs/-/uniqs-2.0.0.tgz#ffede4b36b25290696e6e165d4a59edb998e6b02"
 
-unistore@^3.0.6:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/unistore/-/unistore-3.0.6.tgz#e3abefaca0184bd932e4818fb20b771aafdd6dcb"
+unistore@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/unistore/-/unistore-3.1.0.tgz#38ba40ba43e6d0cb89e842b6216469736c93dd34"
 
 universalify@^0.1.0:
   version "0.1.2"

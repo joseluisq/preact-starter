@@ -6,8 +6,8 @@ import { Logo } from '@components/logo'
 import { CounterComponent } from '@components/counter'
 import '@styles/style.scss'
 
-const App = connect<{}, {}, Actions, State & Actions>('count', actions)(
-  ({ down, up, count }) => <div>
+const App = connect<{}, State & Actions, State & Actions>('count', actions)(
+  ({ down, up, count }: State & Actions) => <div>
     <CounterComponent down={down} up={up} label={count} />
   </div>
 )
