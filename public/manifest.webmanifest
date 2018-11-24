@@ -1,0 +1,13 @@
+{
+  "lang": "en",
+  "name": "Preact Starter",
+  "short_name": "Preact Starter",
+  "start_url": "/",
+  "gcm_sender_id": "1059595317196",
+  "display": "standalone",
+  "orientation": "landscape",
+  "theme_color": "#7323dc",
+  "gcm_user_visible_only": true,
+  "background_color": "#e8e8e8",
+  "permissions": ["gcm"]
+}

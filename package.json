@@ -10,8 +10,9 @@
     "clean": "rm -rf dist .cache",
     "prestart": "yarn clean",
     "start": "parcel public/index.html",
-    "prebuild": "yarn lint && yarn clean",
     "build": "env NODE_ENV=production parcel build --detailed-report --public-url ./ ./public/index.html",
+    "prebuild": "yarn lint && yarn clean",
+    "postbuild": "workbox generateSW",
     "lint": "tslint --format stylish --project tsconfig.json",
     "pretest": "yarn lint",
     "test": "jest",
@@ -33,7 +34,9 @@
     "ts-jest": "^23.0.1",
     "tslint": "^5.11.0",
     "tslint-config-standard-plus": "^2.1.1",
-    "typescript": "^2.9.2"
+    "typescript": "^2.9.2",
+    "workbox-build": "^3.6.3",
+    "workbox-cli": "^3.6.3"
   },
   "jest": {
     "transform": {
