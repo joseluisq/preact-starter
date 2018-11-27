@@ -6,17 +6,15 @@ import { Logo } from '@components/logo'
 import { CounterComponent } from '@components/counter'
 import '@styles/style.scss'
 
-const Main = connect<{}, State & Actions, State & Actions>('count', actions)(
-  ({ down, up, count }: State & Actions) => <div>
-    <CounterComponent down={down} up={up} label={count} />
-  </div>
+const Counter = connect<{}, {}, State & Actions>('count', actions)(
+  (props: State & Actions) => <CounterComponent {...props} />
 )
 
 export const App = () => (
   <Provider store={store}>
-    <main>
+    <div>
       <p><Logo /></p>
-      <Main />
-    </main>
+      <Counter />
+    </div>
   </Provider>
 )

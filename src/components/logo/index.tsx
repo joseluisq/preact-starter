@@ -4,8 +4,10 @@ import './style.scss'
 
 export class Logo extends Component {
   render () {
-    return <a href='https://preactjs.com' target='_blank'>
-      <img src={logo} />
-    </a>
+    return (
+      <a href='https://preactjs.com' target='_blank'>
+        <img src={logo} />
+      </a>
+    )
   }
 }

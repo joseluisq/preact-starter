@@ -8,12 +8,13 @@ export interface Actions {
 }
 
 export interface Label {
-  label: number | string
+  count: number
 }
 
-export interface Button extends Label {
+export interface Button {
   disabled?: boolean
+  label: string
   action (): void
 }
 
-export interface Counter extends Actions, Label {}
+export interface Counter extends Actions, State {}

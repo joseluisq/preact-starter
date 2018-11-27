@@ -9,16 +9,16 @@
   "scripts": {
     "clean": "rm -rf dist .cache",
     "prestart": "yarn clean",
-    "start": "parcel public/index.html",
-    "build": "env NODE_ENV=production parcel build --detailed-report --public-url ./ ./public/index.html",
+    "start": "env NODE_ENV=development parcel public/index.html",
     "prebuild": "yarn lint && yarn clean",
-    "postbuild": "workbox generateSW",
+    "build": "env NODE_ENV=production parcel build --detailed-report --public-url ./ ./public/index.html",
     "lint": "tslint --format stylish --project tsconfig.json",
     "pretest": "yarn lint",
     "test": "jest",
     "test:watch": "jest --watch"
   },
   "dependencies": {
+    "linkstate": "^1.1.1",
     "preact": "^8.3.1",
     "unistore": "^3.1.0"
   },
@@ -30,13 +30,12 @@
     "jest": "^23.4.1",
     "node-sass": "^4.9.2",
     "parcel-bundler": "^1.9.7",
+    "parcel-plugin-sw-precache": "^1.0.3",
     "parcel-plugin-typescript": "^1.0.0",
     "ts-jest": "^23.0.1",
     "tslint": "^5.11.0",
     "tslint-config-standard-plus": "^2.1.1",
-    "typescript": "^2.9.2",
-    "workbox-build": "^3.6.3",
-    "workbox-cli": "^3.6.3"
+    "typescript": "^2.9.2"
   },
   "jest": {
     "transform": {

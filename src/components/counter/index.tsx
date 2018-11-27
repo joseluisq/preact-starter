@@ -3,8 +3,8 @@ import { Button, Counter, Label, State } from '@app/types'
 import './style.scss'
 
 export class CounterLabel extends Component<Label> {
-  render ({ label }: Label) {
-    return <h1>{label}</h1>
+  render ({ count }: Label) {
+    return <h1>{count}</h1>
   }
 }
 
@@ -15,11 +15,13 @@ export class CounterButton extends Component<Button> {
 }
 
 export class CounterComponent extends Component<Counter, State> {
-  render ({ label, down, up }: Counter, { count }: State) {
-    return <div>
-    <CounterLabel label={label} />
-    <CounterButton action={down} label='-' disabled={count <= 0} />
-    <CounterButton action={up} label='+' />
-    </div>
+  render ({ down, up, count }: Counter) {
+    return (
+      <div>
+        <CounterLabel count={count} />
+        <CounterButton action={down} label='-' disabled={count <= 0} />
+        <CounterButton action={up} label='+' />
+      </div>
+    )
   }
 }
