@@ -5,9 +5,11 @@
 ## Features
 
 - [x] [Typescript](https://www.typescriptlang.org/) with TSX
-- [x] [Parcel](https://github.com/parcel-bundler/parcel) bundler
+- [x] [Parcel](https://github.com/parcel-bundler/parcel) bundler with [HMR feature](https://parceljs.org/hmr.html)
+- [x] [Unistore](https://github.com/developit/unistore) with devtools
 - [x] [CSS/Sass/SCSS](https://github.com/sass/node-sass) support
 - [x] [PostCSS with Autoprefixer](https://github.com/postcss/autoprefixer)
+- [x] [PWA](https://developers.google.com/web/progressive-web-apps/) support
 - [ ] [Jest](http://jestjs.io/) testing with [Typescript support](https://github.com/kulshekhar/ts-jest)
 - [x] [TSLint](https://github.com/palantir/tslint) with [Standard Plus](https://github.com/joseluisq/tslint-config-standard-plus) rules
 - [x] [VS Code User Workspace](https://code.visualstudio.com/docs/getstarted/settings) pre-configured and ready to use
